@@ -26,7 +26,7 @@ def updates():
 #for deleting data from table
 def delete():
     delete_column=input("Enter the name you want to delete")
-    delete_values="delete from {} where {}='{}'".format(tablename,columname1,delete_column)
+    delete_values="delete from {} where {}='{}'".format(tablename,columname2,delete_column)
     mycursor.execute(delete_values)
     mydb.commit()
 #for reading and printing the data
