@@ -27,6 +27,7 @@ def updates():
 def delete():
     delete_column=input("Enter the name you want to delete")
     delete_values="delete from {} where {}='{}'".format(tablename,columname2,delete_column)
+    #columname2 is given based on my condition you can give any column name based on your preference
     mycursor.execute(delete_values)
     mydb.commit()
 #for reading and printing the data
